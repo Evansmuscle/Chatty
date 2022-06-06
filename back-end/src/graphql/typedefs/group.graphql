@@ -1,0 +1,14 @@
+# import User from 'user.graphql'
+# import Message from 'message.graphql'
+
+type Group implements Timestamp {
+  name: String!
+  heading: String!
+  users: [User]
+  admin: User!
+  moderators: [User]
+  messages: [Message]
+
+  # Interface required
+  createdAt: Date!
+}

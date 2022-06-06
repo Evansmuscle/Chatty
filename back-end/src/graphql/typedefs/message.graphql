@@ -1,0 +1,14 @@
+# import User from 'user.graphql'
+
+type Message implements Timestamp {
+  from: User!
+  content: String!
+
+  # Interface required
+  createdAt: Date!
+}
+
+input MessageCreateInput {
+  from: User!
+  content: String!
+}

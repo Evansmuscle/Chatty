@@ -1,0 +1,8 @@
+# import User from 'user.graphql'
+# import Message from 'message.graphql'
+
+type DirectMessage {
+  opener: User!
+  receiver: User!
+  messages: [Message]
+}

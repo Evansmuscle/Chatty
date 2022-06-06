@@ -1,0 +1,4 @@
+# Interface
+interface Timestamp {
+  createdAt: Date!
+}

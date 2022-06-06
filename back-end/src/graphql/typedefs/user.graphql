@@ -1,0 +1,10 @@
+type User implements Timestamp {
+  userName: String!
+  nickName: String!
+  description: String
+  statusEmote: String
+  avatar: String
+
+  # Interface required
+  createdAt: Date!
+}
